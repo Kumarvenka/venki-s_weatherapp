@@ -1,0 +1,124 @@
+* {
+    padding: 0;
+    margin: 0;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #cad2c5; /* Light cyan background */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+}
+
+.card {
+    background-color: #8589cc; /* Light purple background for the card */
+    padding: 2rem;
+    min-height: 3rem;
+    min-width: 2rem;
+    border-radius: 16px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1); /* Slightly stronger shadow for better depth */
+}
+
+.search {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    margin-bottom: 1.5rem;
+}
+
+.search input {
+    flex-grow: 1;
+    padding: 0.5rem 1rem;
+    border: 2px solid #bbaad7; 
+    border-radius: 18px ;
+    outline: none;
+    font-size: 1.4rem;
+    min-width: 3rem;
+    transition: border-color 0.3s ease;
+}
+
+.search input:focus {
+    border-color: #8367af; /* Darker border on focus */
+}
+
+.search button {
+    width: 2.5rem;
+    height: 2.75rem;
+    border-radius: 50%;
+    padding: 19px;
+    cursor: pointer;
+    border: none;
+    outline: none;
+    transition: background-color 0.3s ease;
+    background-color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.search button:hover {
+    background-color: #a5a4a7; /* Darker background color on hover */
+}
+
+.search img {
+    width: 1.5rem;
+    height: 1.5rem;
+}
+
+.weather {
+    text-align: center;
+}
+
+.weather-icon {
+    width: 9.9rem;
+    height: 9.9rem;
+    margin-bottom: 1rem;
+}
+
+.temp {
+    font-size: 2.75rem;
+    color: black;
+}
+
+.city {
+    font-size: 1.95rem;
+    color: black;
+    margin-bottom: 1rem;
+}
+
+.details {
+    display: flex;
+    justify-content: space-around;
+    margin-top: 1rem;
+}
+
+.col {
+    margin-top: 0.5rem;
+    display: flex;
+    align-items: center;
+}
+
+.col img {
+    width: 3rem;
+    height: 3rem;
+    margin-right: 0.5rem;
+}
+
+.col p {
+    margin: 0;
+    font-size: 1.15rem;
+    font-weight: bold;
+    color: black;
+}
+
+.humidity, .wind {
+    font-size: 2.92rem;
+    font-weight: bold;
+    color: black;
+}
+.weather{
+    display: none;
+}
